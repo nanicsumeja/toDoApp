@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #e8ccd0, #e8ccd0); 
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  box-shadow: 0 8px 16px rgb(131, 129, 129);
+  border-radius: 15px;
+  text-align: center;
+}
+
+h2 {
+  color: #bb969f;
+  margin-bottom: 20px;
+}
+h3{
+  color:rgb(124, 124, 124);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #bb969f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #957177;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;           /* fleks kontejner */
+  align-items: center;     /* vertikalno poravnanje */
+  justify-content: space-between; /* razmak između zadatka i dugmeta */
+  padding: 10px 0;
+  border-bottom: 1px solid #ffd6e0;
+}
+
+li label {
+  display: flex;
+  align-items: center;     /* checkbox i tekst u istoj liniji */
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e0b0bb;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .checkbox-custom {
+  background-color: #cca7b0b4;
+}
+
+input[type="checkbox"]:checked + .checkbox-custom::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+
+.checkbox-custom:hover {
+  box-shadow: 0 0 5px rgba(219, 143, 161, 0.6);
+}
+
+button {
+  background-color: #c598a3e0;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #a27c86;
+}
